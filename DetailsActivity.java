@@ -12,7 +12,6 @@ public class DetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_details);
         // get the intent
         Bundle extras = getIntent().getExtras();
-        // create a cheese object from the cheese object that was passed over from // the MainActivity. Notice you use the key ('cheese') to retrieve the value/variable needed.
         Employee theEmp = (Employee) extras.get("emp");
         System.out.println("received from the intent: "+ theEmp.getName());
         TextView t = (TextView)findViewById(R.id.titleTextView);
